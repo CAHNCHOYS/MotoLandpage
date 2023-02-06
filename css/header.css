@@ -1,0 +1,85 @@
+._ibg {
+  position: relative;
+}
+
+._ibg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+._ibg_c img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.bg-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.bg-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.header {
+  position: absolute;
+  z-index: 102;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  min-width: 320px;
+}
+
+.header__container {
+  text-align: center;
+}
+
+.header__body {
+  padding: 5px 0px 5px 0px;
+  min-height: 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo p.icon-motorcycle::before {
+  color: #ffffff;
+  font-size: 2.625rem;
+}
+
+.header__logo p.icon-doubleArrowDown::before {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 991.98px) {
+  .header__body {
+    min-height: 65px;
+  }
+
+  .header__logo p.icon-motorcycle::before {
+    font-size: 2.25rem;
+  }
+
+  .header__logo p.icon-doubleArrowDown::before {
+    font-size: 0.75rem;
+  }
+}
